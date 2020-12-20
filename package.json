@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "commit": "cz"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
@@ -42,6 +43,7 @@
     "@typescript-eslint/parser": "^2.27.0",
     "axios-mock-adapter": "^1.18.1",
     "babel-jest": "^24.9.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
@@ -58,5 +60,10 @@
     "react-test-renderer": "16.11.0",
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
